@@ -1,0 +1,31 @@
+:root {
+    --etch-container-width: 700px;
+    --etch-container-height: 700px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+}
+
+.etch-flex-container {
+    box-sizing: content-box;
+    width: var(--etch-container-width);
+    height: var(--etch-container-height);
+    margin: 120px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: calc(var(--etch-container-width) / 16);
+    height: calc(var(--etch-container-height) / 16);
+    border: 1px solid rgb(241, 238, 238);
+    background-color:rgba(155, 152, 152, 0.425);
+}
