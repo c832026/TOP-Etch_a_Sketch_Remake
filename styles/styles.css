@@ -1,6 +1,7 @@
 :root {
-    --etch-container-width: 700px;
-    --etch-container-height: 700px;
+    --ETCH-CONTAINER-WIDTH: 700px;
+    --ETCH-CONTAINER-HEIGHT: 700px;
+    --pixels-per-row: 16;
 }
 
 *,
@@ -15,21 +16,26 @@
 
 .etch-flex-container {
     box-sizing: content-box;
-    width: var(--etch-container-width);
-    height: var(--etch-container-height);
-    margin: 120px auto;
+    width: var(--ETCH-CONTAINER-WIDTH);
+    height: var(--ETCH-CONTAINER-HEIGHT);
+    margin: 50px auto;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
 }
 
 .square {
-    width: calc(var(--etch-container-width) / 16);
-    height: calc(var(--etch-container-height) / 16);
+    width: calc(var(--ETCH-CONTAINER-WIDTH) / var(--pixels-per-row));
+    height: calc(var(--ETCH-CONTAINER-HEIGHT) / var(--pixels-per-row));
     border: 1px solid rgb(241, 238, 238);
     background-color:rgba(155, 152, 152, 0.425);
 }
 
 .isBlack {
     background-color: black;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 50px;
 }
