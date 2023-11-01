@@ -29,3 +29,7 @@
     border: 1px solid rgb(241, 238, 238);
     background-color:rgba(155, 152, 152, 0.425);
 }
+
+.isBlack {
+    background-color: black;
+}
